@@ -1,0 +1,24 @@
+:root{--brick:#9c3d2e;--ink:#2a2220;--line:#e4d8d2;--tint:#fbf3ef}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,"Times New Roman",serif;color:var(--ink);line-height:1.7;background:#fff}
+.head{background:var(--brick);color:#fff;text-align:center;padding:64px 6%}
+.head h1{font-size:clamp(1.9rem,5vw,2.8rem)}
+.head p{margin-top:8px;color:#f3d9d2}
+.wrap{max-width:760px;margin:0 auto;padding:40px 6% 60px}
+section{margin-bottom:40px}
+h2{font-size:1.4rem;margin-bottom:14px;color:var(--brick)}
+details{border:1px solid var(--line);border-radius:8px;margin-bottom:10px;background:#fff}
+summary{cursor:pointer;padding:16px 50px 16px 18px;font-weight:bold;list-style:none;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--brick);transition:transform .2s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+details[open]{background:var(--tint)}
+summary:focus-visible{outline:3px solid #e0a090;border-radius:8px}
+details p{padding:0 18px 18px}
+.contact form{display:grid;gap:8px}
+.contact label{font-size:.9rem}
+.contact input,.contact textarea{padding:11px;border:1.5px solid #cdbbb4;border-radius:6px;font:inherit}
+.contact input:focus,.contact textarea:focus{outline:3px solid #e8b9ad;border-color:var(--brick)}
+.contact button{justify-self:start;margin-top:8px;padding:11px 26px;border:0;border-radius:6px;background:var(--brick);color:#fff;font:inherit;font-weight:bold;cursor:pointer}
+.contact button:hover,.contact button:focus-visible{background:#7a2c20}
+footer{text-align:center;padding:22px;background:var(--tint);font-size:.9rem;border-top:1px solid var(--line)}
